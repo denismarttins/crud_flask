@@ -1,0 +1,42 @@
+{% extends 'layout.html' %}
+{% block body %}
+<div class="row">
+    <div class="col-5 mx-auto">
+        <h3>CADASTRE</h3><hr>
+        <form method="post" action="{{url_for('add_user')}}">
+            <div class="form-group">
+                <label>Nome</label>
+                <input type="text" name="nome" required class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Idade</label>
+                <input type="text" name="idade" required class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Rua</label>
+                <input type="text" name="rua" required class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Cidade</label>
+                <input type="text" name="cidade" required class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Número</label>
+                <input type="text" name="numero" required class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Estado</label>
+                <input type="text" name="estado" required class="form-control">
+            </div>
+            <div class="form-group">
+                <label>E-mail</label>
+                <input type="text" name="email" required class="form-control">
+            </div>
+        </br>
+            <input type="submit" value="Adicionar" class="btn btn-primary">
+        </form>
+    </div>
+        
+</div>
+
+{% endblock %}
